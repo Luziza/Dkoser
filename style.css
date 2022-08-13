@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "topo topo"
+        "header header"
+        "imagem imagem"
+        "loja endereco"
+        "footer footer"
+    
+    ;
+
+    grid-template-rows: 100px 60px 250px 300px 200px;
+}
+
+.topo{
+    grid-area: topo;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+    grid-area: header;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagem{
+    grid-area: imagem;
+    background-color: palevioletred;
+}
+
+.loja{
+    grid-area: loja;
+    background-color: blueviolet;
+}
+
+.endereco{
+    grid-area: endereco;
+    background-color: red;
+}
+
+footer{
+    grid-area: footer;
+    background-color: chocolate;
+}
